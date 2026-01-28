@@ -1,0 +1,337 @@
+schema_version: '0.2'
+topic: Berlin (history + atmosphere + modern art)
+country: Germany
+generated_at: '2026-01-28'
+regions:
+- id: berlin-mitte
+  name: Mitte & Museuminsel
+  description: 'Het historische hart van Berlijn: Museuminsel, Unter den Linden, regeringskwartier en gedenkplekken.'
+  base_towns:
+  - Berlin-Mitte
+- id: berlin-tiergarten
+  name: Tiergarten & Regierungsviertel
+  description: Monumenten, parken en het moderne regeringscentrum rond Tiergarten en de Spree.
+  base_towns:
+  - Berlin-Tiergarten
+- id: berlin-kreuzberg-neukoelln
+  name: Kreuzberg & Neukölln
+  description: Vibe, streetfood, subcultuur, street art en avond-energie. Veel om te dwalen.
+  base_towns:
+  - Kreuzberg
+  - Neukölln
+- id: berlin-friedrichshain
+  name: Friedrichshain & East Side
+  description: Muurgeschiedenis, Spree-oever, clubs en creatieve hubs.
+  base_towns:
+  - Friedrichshain
+- id: berlin-prenzlauerberg
+  name: Prenzlauer Berg & Pankow
+  description: Relaxte buurten, cafés, weekend-sfeer, kleine galeries en parken.
+  base_towns:
+  - Prenzlauer Berg
+- id: berlin-charlottenburg
+  name: Charlottenburg & West Berlin
+  description: 'Klassiek West-Berlijn: Kurfürstendamm, paleis en grote musea.'
+  base_towns:
+  - Charlottenburg
+pois:
+- id: brandenburg-gate
+  name: Brandenburger Tor
+  type: landmark
+  region_id: berlin-tiergarten
+  location:
+    locality: Berlin
+    province: Berlin
+    country: Germany
+  why_visit: Iconisch symbool van Berlijn – fijn startpunt voor een centrumwandeling.
+  themes:
+  - history
+  - vibe
+  related:
+    years:
+    - '1791'
+    - '1989'
+  practical:
+    typical_visit_time: 15–30 min
+    indoor_outdoor: outdoor
+  links:
+    wikipedia: https://en.wikipedia.org/wiki/Brandenburg_Gate
+    maps_query: Brandenburg Gate
+- id: reichstag-building
+  name: Reichstag Building (koepel)
+  type: landmark
+  region_id: berlin-tiergarten
+  location:
+    locality: Berlin
+    province: Berlin
+    country: Germany
+  why_visit: Politiek + architectuur + uitzicht. Reserveren vaak nodig.
+  themes:
+  - history
+  - architecture
+  - vibe
+  related:
+    years:
+    - '1894'
+    - '1999'
+  practical:
+    typical_visit_time: 60–120 min
+    indoor_outdoor: mixed
+    notes: Check vooraf reservering.
+  links:
+    wikipedia: https://en.wikipedia.org/wiki/Reichstag_building
+    maps_query: Reichstag Building
+- id: berlin-wall-memorial
+  name: Berlin Wall Memorial (Gedenkstätte Berliner Mauer)
+  type: memorial
+  region_id: berlin-mitte
+  location:
+    locality: Berlin
+    province: Berlin
+    country: Germany
+  why_visit: 'Beste plek om de Muur te begrijpen: originele stukken, documentatiecentrum en uitkijkpunt.'
+  themes:
+  - history
+  - cold-war
+  - remembrance
+  related:
+    years:
+    - '1961'
+    - '1989'
+  practical:
+    typical_visit_time: 90–150 min
+    indoor_outdoor: mixed
+  links:
+    wikipedia: https://en.wikipedia.org/wiki/Berlin_Wall_Memorial
+    maps_query: Gedenkstätte Berliner Mauer
+- id: checkpoint-charlie
+  name: Checkpoint Charlie
+  type: site
+  region_id: berlin-kreuzberg-neukoelln
+  location:
+    locality: Berlin
+    province: Berlin
+    country: Germany
+  why_visit: Toeristisch, maar historisch relevant als symbolische grensovergang (Koude Oorlog).
+  themes:
+  - history
+  - cold-war
+  related:
+    years:
+    - '1961'
+    - '1989'
+  practical:
+    typical_visit_time: 20–40 min
+    indoor_outdoor: outdoor
+  links:
+    wikipedia: https://en.wikipedia.org/wiki/Checkpoint_Charlie
+    maps_query: Checkpoint Charlie
+- id: topography-of-terror
+  name: Topography of Terror
+  type: museum
+  region_id: berlin-kreuzberg-neukoelln
+  location:
+    locality: Berlin
+    province: Berlin
+    country: Germany
+  why_visit: Indrukwekkend documentatiecentrum over naziterror en politie-apparaat op historische locatie.
+  themes:
+  - history
+  - ww2
+  - remembrance
+  practical:
+    typical_visit_time: 90–150 min
+    indoor_outdoor: mixed
+  links:
+    wikipedia: https://en.wikipedia.org/wiki/Topography_of_Terror
+    maps_query: Topography of Terror
+- id: memorial-murdered-jews
+  name: Memorial to the Murdered Jews of Europe
+  type: memorial
+  region_id: berlin-tiergarten
+  location:
+    locality: Berlin
+    province: Berlin
+    country: Germany
+  why_visit: Krachtige herdenkingsplek midden in de stad, met info-centrum.
+  themes:
+  - remembrance
+  - ww2
+  - architecture
+  practical:
+    typical_visit_time: 45–90 min
+    indoor_outdoor: mixed
+  links:
+    wikipedia: https://en.wikipedia.org/wiki/Memorial_to_the_Murdered_Jews_of_Europe
+    maps_query: Memorial to the Murdered Jews of Europe
+- id: pergamon-museum
+  name: Pergamon Museum (Museuminsel)
+  type: museum
+  region_id: berlin-mitte
+  location:
+    locality: Berlin
+    province: Berlin
+    country: Germany
+  why_visit: Wereldklasse collectie (oudheid). Check open/renovatie-status vooraf.
+  themes:
+  - museum
+  - history
+  - architecture
+  practical:
+    typical_visit_time: 120–240 min
+    indoor_outdoor: indoor
+  links:
+    wikipedia: https://en.wikipedia.org/wiki/Pergamon_Museum
+    maps_query: Pergamonmuseum
+- id: neue-nationalgalerie
+  name: Neue Nationalgalerie
+  type: museum
+  region_id: berlin-tiergarten
+  location:
+    locality: Berlin
+    province: Berlin
+    country: Germany
+  why_visit: Modern kunst-anker + iconische Mies van der Rohe architectuur.
+  themes:
+  - modern-art
+  - museum
+  - architecture
+  practical:
+    typical_visit_time: 90–150 min
+    indoor_outdoor: indoor
+  links:
+    wikipedia: https://en.wikipedia.org/wiki/Neue_Nationalgalerie
+    maps_query: Neue Nationalgalerie
+- id: hamburger-bahnhof
+  name: Hamburger Bahnhof – Museum für Gegenwart
+  type: museum
+  region_id: berlin-mitte
+  location:
+    locality: Berlin
+    province: Berlin
+    country: Germany
+  why_visit: Top voor hedendaagse kunst en grote installaties.
+  themes:
+  - modern-art
+  - museum
+  practical:
+    typical_visit_time: 120–240 min
+    indoor_outdoor: indoor
+  links:
+    wikipedia: https://en.wikipedia.org/wiki/Hamburger_Bahnhof
+    maps_query: Hamburger Bahnhof Museum
+- id: boros-collection
+  name: Boros Collection (bunker – contemporary art)
+  type: museum
+  region_id: berlin-mitte
+  location:
+    locality: Berlin
+    province: Berlin
+    country: Germany
+  why_visit: Hedendaagse kunst in een bunker; bijzondere setting (meestal alleen met tour).
+  themes:
+  - modern-art
+  - vibe
+  - architecture
+  practical:
+    typical_visit_time: 60–90 min
+    indoor_outdoor: indoor
+  links:
+    wikipedia: https://en.wikipedia.org/wiki/Boros_Collection
+    maps_query: Boros Collection
+- id: east-side-gallery
+  name: East Side Gallery
+  type: site
+  region_id: berlin-friedrichshain
+  location:
+    locality: Berlin
+    province: Berlin
+    country: Germany
+  why_visit: Openlucht-galerie op een stuk Berlijnse Muur — fijne vibe-wandeling langs de Spree.
+  themes:
+  - street-art
+  - history
+  - vibe
+  related:
+    years:
+    - '1990'
+  practical:
+    typical_visit_time: 45–90 min
+    indoor_outdoor: outdoor
+  links:
+    wikipedia: https://en.wikipedia.org/wiki/East_Side_Gallery
+    maps_query: East Side Gallery
+- id: tempelhofer-feld
+  name: Tempelhofer Feld
+  type: park
+  region_id: berlin-kreuzberg-neukoelln
+  location:
+    locality: Berlin
+    province: Berlin
+    country: Germany
+  why_visit: Mega open ruimte om te wandelen/fietsen/skaten + locals vibe.
+  themes:
+  - vibe
+  - outdoors
+  practical:
+    typical_visit_time: 60–180 min
+    indoor_outdoor: outdoor
+  links:
+    wikipedia: https://en.wikipedia.org/wiki/Tempelhofer_Feld
+    maps_query: Tempelhofer Feld
+- id: mauerpark
+  name: Mauerpark
+  type: park
+  region_id: berlin-prenzlauerberg
+  location:
+    locality: Berlin
+    province: Berlin
+    country: Germany
+  why_visit: 'Zondags: markt + straatmuziek + (soms) karaoke. Heel Berlijns.'
+  themes:
+  - vibe
+  - outdoors
+  practical:
+    typical_visit_time: 60–150 min
+    indoor_outdoor: outdoor
+  links:
+    wikipedia: https://en.wikipedia.org/wiki/Mauerpark
+    maps_query: Mauerpark
+- id: raw-gelaende
+  name: RAW-Gelände (street art & nightlife zone)
+  type: neighborhood
+  region_id: berlin-friedrichshain
+  location:
+    locality: Berlin
+    province: Berlin
+    country: Germany
+  why_visit: Industriële vibe met street art, bars en events—goed voor avond/late sfeer.
+  themes:
+  - vibe
+  - street-art
+  - nightlife
+  practical:
+    typical_visit_time: 60–180 min
+    indoor_outdoor: mixed
+  links:
+    wikipedia: https://en.wikipedia.org/wiki/RAW-Gel%C3%A4nde
+    maps_query: RAW-Gelände Berlin
+- id: charlottenburg-palace
+  name: Schloss Charlottenburg
+  type: palace
+  region_id: berlin-charlottenburg
+  location:
+    locality: Berlin
+    province: Berlin
+    country: Germany
+  why_visit: Paleis + tuinen; mooi contrast met ‘ruw’ Berlijn.
+  themes:
+  - history
+  - architecture
+  - vibe
+  practical:
+    typical_visit_time: 120–240 min
+    indoor_outdoor: mixed
+  links:
+    wikipedia: https://en.wikipedia.org/wiki/Schloss_Charlottenburg
+    maps_query: Schloss Charlottenburg

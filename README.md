@@ -1,57 +1,87 @@
-# Berlijn POI Planner (static)
+# WWI Belgium Tripkit (data-first)
 
-Een simpele, **GitHub Pages-vriendelijke** webapp (geen build tools) om Points of Interest (POI’s) in Berlijn te beheren,
-gegroepeerd op thema (Koude Oorlog, WO2, Modern Berlijn, Cocktails, Restaurants).
+This repo is a **data-first, GitHub-friendly** catalogue of **World War I points of interest in Belgium**.
+It’s meant to be:
+- **Simple** (one main YAML file)
+- **Searchable** (easy to grep / filter / load in scripts)
+- **Extensible** (add POIs quickly—ideally starting from a Wikipedia URL)
 
-## Features
-- Thema-filter + zoekveld
-- Kaart (Leaflet)
-- Favorieten (localStorage)
-- **Routekaart binnen Berlijn**: voeg POI’s toe aan de route of maak `Route = Favorieten`  
-  (route wordt getekend via OSRM / Leaflet Routing Machine)
-- Detailpaneel met:
-  - **Klikbaar plaatje** → opent **bronpagina** van het plaatje (Wikimedia Commons “File:” pagina)
-  - **Meer info** link: NL als beschikbaar, anders EN
+> Note: “all WWI sites” is effectively unbounded (thousands of cemeteries, memorials, small markers).
+> This repo starts with **high-value / visitor-relevant** sites and provides a workflow to keep expanding.
 
-## Live draaien (lokaal)
-Vanuit deze map:
+## File structure
 
-### Optie A: Python (makkelijk)
+- `data/ww1-belgium.yaml` — regions + POIs
+- `scripts/add_from_wikipedia.py` — add a stub POI from a Wikipedia URL (and enrich it a bit)
+- `scripts/validate.py` — basic schema checks
+
+## Data model (quick)
+
+Each POI has:
+- `region_id` (links to a region)
+- `type` (museum / memorial / cemetery / trench / fort / …)
+- `why_visit` (1–2 lines)
+- `themes` (tags for filtering)
+- `links` (official, wikipedia, wikidata, …)
+
+## Quick start
+
+### 1) Validate the YAML
 ```bash
-python -m http.server 8000
+python -m pip install pyyaml jsonschema
+python scripts/validate.py data/ww1-belgium.yaml
 ```
-Open daarna in je browser: `http://localhost:8000`
 
-### Optie B: VSCode Live Server
-Open folder → “Go Live”.
+### 2) Add a POI from Wikipedia
+Example:
+```bash
+python -m pip install pyyaml requests
+python scripts/add_from_wikipedia.py \
+  --yaml data/ww1-belgium.yaml \
+  --region westhoek-ypres-salient \
+  --type museum \
+  --wikipedia "https://en.wikipedia.org/wiki/Essex_Farm_Cemetery"
+```
 
-> Let op: `fetch("./pois.json")` werkt niet als je `index.html` direct via `file://` opent.
+The script will:
+- fetch the title + short extract via the MediaWiki API
+- try to pull coordinates and Wikidata ID
+- insert a new POI stub you can then refine (why_visit, themes, visit time, official site, etc.)
 
-## Deploy naar GitHub Pages
-1. Maak een repo aan en commit de bestanden.
-2. GitHub → Settings → Pages → Deploy from branch → `/ (root)` → Save.
-3. Wacht tot Pages live is.
+## Contributing
 
-## POI’s aanpassen / uitbreiden
-Alle data staat in `pois.json`.
+PRs welcome:
+- add new POIs
+- improve `why_visit` summaries
+- add coordinates / Wikidata IDs
+- add better region groupings
 
-Velden per POI:
-- `title`, `theme`, `lat`, `lng`
-- `info.nl` en/of `info.en` (als NL niet bestaat, laat je die weg)
-- `image.commonsFile` (bestandsnaam op Wikimedia Commons)
-- `image.sourcePage` (optioneel; anders wordt automatisch `https://commons.wikimedia.org/wiki/File:<commonsFile>` gebruikt)
+## License
+Suggested:
+- Code: **MIT**
+- Data: **CC BY 4.0**
 
-### Afbeelding toevoegen (Wikimedia Commons)
-1. Zoek een geschikte foto op Wikimedia Commons.
-2. Neem de **File name** over (bijv. `Holocaust-Mahnmal Berlin.jpg`).
-3. Plak in `image.commonsFile`.
-4. Klaar: het plaatje wordt getoond en is klikbaar naar de bron.
+(You can of course choose one license for everything if you prefer.)
 
-## Disclaimer
-Coördinaten en sommige links zijn een **starter set** (handig als basis). Controleer/verbeter ze gerust op basis van jouw bronnen
-(Wikipedia, berlin.de, officiële sites).
+## GitHub Pages (optioneel: browsebare webgids)
 
+Deze repo bevat een **statische webpagina** (geen build tools nodig) onder `docs/`:
+- `docs/index.html`
+- `docs/app.js`
+- `docs/styles.css`
+- `docs/data/ww1-belgium.yaml`
 
-## Import scripts (Wikipedia/Wikidata)
+### Pages aanzetten
+1. GitHub → **Settings** → **Pages**
+2. **Build and deployment** → *Deploy from a branch*
+3. Branch: **main**
+4. Folder: **/docs**
+5. Save
 
-Zie `scripts/README.md`.
+Na publicatie vind je de gids op je GitHub Pages URL.
+
+### Data bewerken via browser
+Iedereen met write-access kan direct in GitHub de YAML aanpassen via:
+`docs/data/ww1-belgium.yaml` (of via de “Bewerk data op GitHub” link bovenaan de pagina).
+
+Voor bijdragers zonder write-access: laat ze een PR openen.
