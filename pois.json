@@ -1,0 +1,677 @@
+[
+  {
+    "id": "berlin-wall-memorial",
+    "title": "Gedenkstätte Berliner Mauer (Bernauer Straße)",
+    "theme": "Koude Oorlog",
+    "lat": 52.5351,
+    "lng": 13.3903,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Gedenkst%C3%A4tte_Berliner_Mauer",
+      "en": "https://en.wikipedia.org/wiki/Berlin_Wall_Memorial"
+    },
+    "image": {
+      "commonsFile": "Berlin Wall Memorial Bernauer Straße.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Berlin_Wall_Memorial_Bernauer_Straße.jpg"
+    }
+  },
+  {
+    "id": "east-side-gallery",
+    "title": "East Side Gallery",
+    "theme": "Koude Oorlog",
+    "lat": 52.505,
+    "lng": 13.439,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/East_Side_Gallery",
+      "en": "https://en.wikipedia.org/wiki/East_Side_Gallery"
+    },
+    "image": {
+      "commonsFile": "East Side Gallery Berlin 2017.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:East_Side_Gallery_Berlin_2017.jpg"
+    }
+  },
+  {
+    "id": "checkpoint-charlie",
+    "title": "Checkpoint Charlie",
+    "theme": "Koude Oorlog",
+    "lat": 52.5076,
+    "lng": 13.3904,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Checkpoint_Charlie",
+      "en": "https://en.wikipedia.org/wiki/Checkpoint_Charlie"
+    },
+    "image": {
+      "commonsFile": "Checkpoint Charlie sign.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Checkpoint_Charlie_sign.jpg"
+    }
+  },
+  {
+    "id": "tranenpalast",
+    "title": "Tränenpalast",
+    "theme": "Koude Oorlog",
+    "lat": 52.5212,
+    "lng": 13.3873,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Tr%C3%A4nenpalast",
+      "en": "https://en.wikipedia.org/wiki/Tr%C3%A4nenpalast"
+    },
+    "image": {
+      "commonsFile": "Traenenpalast Berlin.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Traenenpalast_Berlin.jpg"
+    }
+  },
+  {
+    "id": "ddr-museum",
+    "title": "DDR Museum",
+    "theme": "Koude Oorlog",
+    "lat": 52.5193,
+    "lng": 13.4021,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/DDR_Museum",
+      "en": "https://en.wikipedia.org/wiki/DDR_Museum"
+    },
+    "image": {
+      "commonsFile": "DDR Museum Berlin.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:DDR_Museum_Berlin.jpg"
+    }
+  },
+  {
+    "id": "stasi-museum",
+    "title": "Stasimuseum (Normannenstraße)",
+    "theme": "Koude Oorlog",
+    "lat": 52.5168,
+    "lng": 13.485,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Stasi-Museum",
+      "en": "https://en.wikipedia.org/wiki/Stasi_Museum"
+    },
+    "image": {
+      "commonsFile": "Stasi Museum Berlin.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Stasi_Museum_Berlin.jpg"
+    }
+  },
+  {
+    "id": "hohenschonhausen",
+    "title": "Gedenkstätte Berlin-Hohenschönhausen",
+    "theme": "Koude Oorlog",
+    "lat": 52.5495,
+    "lng": 13.5017,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Gedenkst%C3%A4tte_Berlin-Hohensch%C3%B6nhausen",
+      "en": "https://en.wikipedia.org/wiki/Berlin-Hohensch%C3%B6nhausen_Memorial"
+    },
+    "image": {
+      "commonsFile": "Gedenkstaette Hohenschoenhausen Berlin.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Gedenkstaette_Hohenschoenhausen_Berlin.jpg"
+    }
+  },
+  {
+    "id": "allied-museum",
+    "title": "AlliiertenMuseum",
+    "theme": "Koude Oorlog",
+    "lat": 52.4507,
+    "lng": 13.2766,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Alliierte_Museum",
+      "en": "https://en.wikipedia.org/wiki/Allied_Museum"
+    },
+    "image": {
+      "commonsFile": "AlliiertenMuseum Berlin.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:AlliiertenMuseum_Berlin.JPG"
+    }
+  },
+  {
+    "id": "teufelsberg",
+    "title": "Teufelsberg (voormalige luisterpost)",
+    "theme": "Koude Oorlog",
+    "lat": 52.503,
+    "lng": 13.2417,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Teufelsberg",
+      "en": "https://en.wikipedia.org/wiki/Teufelsberg"
+    },
+    "image": {
+      "commonsFile": "Teufelsberg - Radome.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Teufelsberg_-_Radome.jpg"
+    }
+  },
+  {
+    "id": "glienicke-bridge",
+    "title": "Glienicker Brücke (spionnenruil)",
+    "theme": "Koude Oorlog",
+    "lat": 52.4167,
+    "lng": 13.0956,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Glienicker_Br%C3%BCcke",
+      "en": "https://en.wikipedia.org/wiki/Glienicke_Bridge"
+    },
+    "image": {
+      "commonsFile": "Glienicker Bruecke 2008.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Glienicker_Bruecke_2008.jpg"
+    }
+  },
+  {
+    "id": "topography-of-terror",
+    "title": "Topographie des Terrors",
+    "theme": "Wereldoorlog 2",
+    "lat": 52.5076,
+    "lng": 13.3814,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Topographie_des_Terrors",
+      "en": "https://en.wikipedia.org/wiki/Topography_of_Terror"
+    },
+    "image": {
+      "commonsFile": "Topographie des Terrors Berlin 2014.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Topographie_des_Terrors_Berlin_2014.jpg"
+    }
+  },
+  {
+    "id": "holocaust-memorial",
+    "title": "Holocaust-Mahnmal (Denkmal für die ermordeten Juden Europas)",
+    "theme": "Wereldoorlog 2",
+    "lat": 52.5139,
+    "lng": 13.3787,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Denkmal_voor_de_vermoorde_Joden_van_Europa",
+      "en": "https://en.wikipedia.org/wiki/Memorial_to_the_Murdered_Jews_of_Europe"
+    },
+    "image": {
+      "commonsFile": "Holocaust-Mahnmal Berlin.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Holocaust-Mahnmal_Berlin.jpg"
+    }
+  },
+  {
+    "id": "jewish-museum",
+    "title": "Joods Museum Berlijn",
+    "theme": "Wereldoorlog 2",
+    "lat": 52.5027,
+    "lng": 13.3956,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Joods_museum_Berlijn",
+      "en": "https://en.wikipedia.org/wiki/Jewish_Museum_Berlin"
+    },
+    "image": {
+      "commonsFile": "Juedisches Museum Berlin 2014.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Juedisches_Museum_Berlin_2014.jpg"
+    }
+  },
+  {
+    "id": "wannsee-conference",
+    "title": "Haus der Wannsee-Konferenz",
+    "theme": "Wereldoorlog 2",
+    "lat": 52.4193,
+    "lng": 13.1799,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Haus_der_Wannsee-Konferenz",
+      "en": "https://en.wikipedia.org/wiki/Wannsee_Conference"
+    },
+    "image": {
+      "commonsFile": "Haus der Wannsee-Konferenz Berlin.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Haus_der_Wannsee-Konferenz_Berlin.jpg"
+    }
+  },
+  {
+    "id": "german-resistance",
+    "title": "Gedenkstätte Deutscher Widerstand (Bendlerblock)",
+    "theme": "Wereldoorlog 2",
+    "lat": 52.507,
+    "lng": 13.3649,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Gedenkst%C3%A4tte_Deutscher_Widerstand",
+      "en": "https://en.wikipedia.org/wiki/German_Resistance_Memorial_Center"
+    },
+    "image": {
+      "commonsFile": "Bendlerblock Berlin.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bendlerblock_Berlin.jpg"
+    }
+  },
+  {
+    "id": "neue-wache",
+    "title": "Neue Wache (Centrale gedenkplaats)",
+    "theme": "Wereldoorlog 2",
+    "lat": 52.5163,
+    "lng": 13.3937,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Neue_Wache",
+      "en": "https://en.wikipedia.org/wiki/Neue_Wache"
+    },
+    "image": {
+      "commonsFile": "Neue Wache Berlin.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Neue_Wache_Berlin.jpg"
+    }
+  },
+  {
+    "id": "soviet-memorial-tiergarten",
+    "title": "Sovjet Ereveld / War Memorial (Tiergarten)",
+    "theme": "Wereldoorlog 2",
+    "lat": 52.5149,
+    "lng": 13.3575,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Sovjet_Oorlogsmonument_(Tiergarten)",
+      "en": "https://en.wikipedia.org/wiki/Soviet_War_Memorial_(Tiergarten)"
+    },
+    "image": {
+      "commonsFile": "Sowjetisches Ehrenmal Tiergarten Berlin.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sowjetisches_Ehrenmal_Tiergarten_Berlin.jpg"
+    }
+  },
+  {
+    "id": "soviet-memorial-treptow",
+    "title": "Sovjet Oorlogsmonument (Treptower Park)",
+    "theme": "Wereldoorlog 2",
+    "lat": 52.4895,
+    "lng": 13.469,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Sovjet_oorlogsmonument_(Treptower_Park)",
+      "en": "https://en.wikipedia.org/wiki/Soviet_War_Memorial_(Treptower_Park)"
+    },
+    "image": {
+      "commonsFile": "Sowjetisches Ehrenmal Treptower Park Berlin.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sowjetisches_Ehrenmal_Treptower_Park_Berlin.jpg"
+    }
+  },
+  {
+    "id": "stolpersteine",
+    "title": "Stolpersteine (struikelstenen – verspreid door de stad)",
+    "theme": "Wereldoorlog 2",
+    "lat": 52.52,
+    "lng": 13.405,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Stolpersteine",
+      "en": "https://en.wikipedia.org/wiki/Stolperstein"
+    },
+    "image": {
+      "commonsFile": "Stolperstein Berlin.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Stolperstein_Berlin.jpg"
+    }
+  },
+  {
+    "id": "sachsenhausen",
+    "title": "KZ-Gedenkstätte Sachsenhausen (dagtrip)",
+    "theme": "Wereldoorlog 2",
+    "lat": 52.7536,
+    "lng": 13.2472,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Sachsenhausen_(concentratiekamp)",
+      "en": "https://en.wikipedia.org/wiki/Sachsenhausen_concentration_camp"
+    },
+    "image": {
+      "commonsFile": "Sachsenhausen memorial entrance.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sachsenhausen_memorial_entrance.jpg"
+    }
+  },
+  {
+    "id": "reichstag",
+    "title": "Reichstag (koepel)",
+    "theme": "Modern Berlijn",
+    "lat": 52.5186,
+    "lng": 13.3762,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Reichstag_(gebouw)",
+      "en": "https://en.wikipedia.org/wiki/Reichstag_building"
+    },
+    "image": {
+      "commonsFile": "Reichstag building Berlin view from west.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Reichstag_building_Berlin_view_from_west.jpg"
+    }
+  },
+  {
+    "id": "brandenburg-gate",
+    "title": "Brandenburger Tor",
+    "theme": "Modern Berlijn",
+    "lat": 52.5163,
+    "lng": 13.3777,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Brandenburger_Tor",
+      "en": "https://en.wikipedia.org/wiki/Brandenburg_Gate"
+    },
+    "image": {
+      "commonsFile": "Brandenburger Tor abends.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_abends.jpg"
+    }
+  },
+  {
+    "id": "potsdamer-platz",
+    "title": "Potsdamer Platz",
+    "theme": "Modern Berlijn",
+    "lat": 52.5096,
+    "lng": 13.376,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Potsdamer_Platz",
+      "en": "https://en.wikipedia.org/wiki/Potsdamer_Platz"
+    },
+    "image": {
+      "commonsFile": "Potsdamer Platz at night.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Potsdamer_Platz_at_night.jpg"
+    }
+  },
+  {
+    "id": "berlin-hbf",
+    "title": "Berlin Hauptbahnhof",
+    "theme": "Modern Berlijn",
+    "lat": 52.5251,
+    "lng": 13.3694,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Berlin_Hauptbahnhof",
+      "en": "https://en.wikipedia.org/wiki/Berlin_Hauptbahnhof"
+    },
+    "image": {
+      "commonsFile": "Berlin Hauptbahnhof - Panorama.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Berlin_Hauptbahnhof_-_Panorama.jpg"
+    }
+  },
+  {
+    "id": "fernsehturm",
+    "title": "Fernsehturm Berlin",
+    "theme": "Modern Berlijn",
+    "lat": 52.5208,
+    "lng": 13.4094,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Fernsehturm_Berlin",
+      "en": "https://en.wikipedia.org/wiki/Berlin_TV_Tower"
+    },
+    "image": {
+      "commonsFile": "Fernsehturm Berlin - Panorama.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Fernsehturm_Berlin_-_Panorama.jpg"
+    }
+  },
+  {
+    "id": "humboldt-forum",
+    "title": "Humboldt Forum",
+    "theme": "Modern Berlijn",
+    "lat": 52.5176,
+    "lng": 13.401,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Humboldt_Forum",
+      "en": "https://en.wikipedia.org/wiki/Humboldt_Forum"
+    },
+    "image": {
+      "commonsFile": "Humboldt Forum Berlin 2021.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Humboldt_Forum_Berlin_2021.jpg"
+    }
+  },
+  {
+    "id": "berlin-philharmonie",
+    "title": "Berliner Philharmonie",
+    "theme": "Modern Berlijn",
+    "lat": 52.5097,
+    "lng": 13.3696,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Berliner_Philharmonie",
+      "en": "https://en.wikipedia.org/wiki/Berliner_Philharmonie"
+    },
+    "image": {
+      "commonsFile": "Berliner Philharmonie 2009.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Berliner_Philharmonie_2009.jpg"
+    }
+  },
+  {
+    "id": "tempelhofer-feld",
+    "title": "Tempelhofer Feld",
+    "theme": "Modern Berlijn",
+    "lat": 52.473,
+    "lng": 13.4039,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Tempelhofer_Feld",
+      "en": "https://en.wikipedia.org/wiki/Tempelhofer_Feld"
+    },
+    "image": {
+      "commonsFile": "Tempelhofer Feld Berlin.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tempelhofer_Feld_Berlin.jpg"
+    }
+  },
+  {
+    "id": "mauerpark",
+    "title": "Mauerpark",
+    "theme": "Modern Berlijn",
+    "lat": 52.5426,
+    "lng": 13.4033,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Mauerpark",
+      "en": "https://en.wikipedia.org/wiki/Mauerpark"
+    },
+    "image": {
+      "commonsFile": "Mauerpark Berlin 2014.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mauerpark_Berlin_2014.jpg"
+    }
+  },
+  {
+    "id": "markthalle-neun",
+    "title": "Markthalle Neun",
+    "theme": "Modern Berlijn",
+    "lat": 52.5008,
+    "lng": 13.427,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Markthalle_Neun",
+      "en": "https://en.wikipedia.org/wiki/Markthalle_Neun"
+    },
+    "image": {
+      "commonsFile": "Markthalle Neun Berlin.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Markthalle_Neun_Berlin.jpg"
+    }
+  },
+  {
+    "id": "green-door",
+    "title": "Green Door",
+    "theme": "Cocktails",
+    "lat": 52.4926,
+    "lng": 13.3527,
+    "info": {
+      "en": "https://en.wikipedia.org/wiki/Green_Door_(bar)"
+    },
+    "image": {
+      "commonsFile": "Green Door Berlin.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Green_Door_Berlin.jpg"
+    }
+  },
+  {
+    "id": "buck-and-breck",
+    "title": "Buck and Breck",
+    "theme": "Cocktails",
+    "lat": 52.5218,
+    "lng": 13.4149,
+    "info": {
+      "en": "https://www.theworlds50best.com/discovery/Establishments/Germany/Berlin/Buck-and-Breck.html"
+    },
+    "image": {}
+  },
+  {
+    "id": "bar-tausend",
+    "title": "Bar Tausend",
+    "theme": "Cocktails",
+    "lat": 52.5238,
+    "lng": 13.3865,
+    "info": {
+      "en": "https://www.theworlds50best.com/discovery/Establishments/Germany/Berlin/Bar-Tausend.html"
+    },
+    "image": {}
+  },
+  {
+    "id": "victoria-bar",
+    "title": "Victoria Bar",
+    "theme": "Cocktails",
+    "lat": 52.5018,
+    "lng": 13.3459,
+    "info": {
+      "en": "https://en.wikipedia.org/wiki/Victoria_Bar"
+    },
+    "image": {}
+  },
+  {
+    "id": "rum-trader",
+    "title": "Rum Trader",
+    "theme": "Cocktails",
+    "lat": 52.5152,
+    "lng": 13.3906,
+    "info": {
+      "en": "https://www.theworlds50best.com/discovery/Establishments/Germany/Berlin/Rum-Trader.html"
+    },
+    "image": {}
+  },
+  {
+    "id": "monkey-bar",
+    "title": "Monkey Bar",
+    "theme": "Cocktails",
+    "lat": 52.5067,
+    "lng": 13.337,
+    "info": {
+      "en": "https://www.25hours-hotels.com/en/hotels/berlin/bikini-berlin/monkey-bar"
+    },
+    "image": {}
+  },
+  {
+    "id": "newton-bar",
+    "title": "Newton Bar",
+    "theme": "Cocktails",
+    "lat": 52.5046,
+    "lng": 13.3229,
+    "info": {
+      "en": "https://www.newtonbar.de/"
+    },
+    "image": {}
+  },
+  {
+    "id": "becketts-kopf",
+    "title": "Becketts Kopf",
+    "theme": "Cocktails",
+    "lat": 52.4976,
+    "lng": 13.3077,
+    "info": {
+      "en": "https://www.theworlds50best.com/discovery/Establishments/Germany/Berlin/Becketts-Kopf.html"
+    },
+    "image": {}
+  },
+  {
+    "id": "velvet-bar",
+    "title": "Velvet",
+    "theme": "Cocktails",
+    "lat": 52.5312,
+    "lng": 13.4017,
+    "info": {
+      "en": "https://www.theworlds50best.com/discovery/Establishments/Germany/Berlin/Velvet.html"
+    },
+    "image": {}
+  },
+  {
+    "id": "oranssi-bar",
+    "title": "ORANSSI Bar",
+    "theme": "Cocktails",
+    "lat": 52.5012,
+    "lng": 13.3284,
+    "info": {
+      "en": "https://www.oranssi.berlin/"
+    },
+    "image": {}
+  },
+  {
+    "id": "restaurant-tim-raue",
+    "title": "Restaurant Tim Raue",
+    "theme": "Restaurants",
+    "lat": 52.5077,
+    "lng": 13.394,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Tim_Raue",
+      "en": "https://en.wikipedia.org/wiki/Tim_Raue"
+    },
+    "image": {}
+  },
+  {
+    "id": "rutz",
+    "title": "Rutz",
+    "theme": "Restaurants",
+    "lat": 52.5266,
+    "lng": 13.394,
+    "info": {
+      "en": "https://guide.michelin.com/en/berlin-region/berlin/restaurant/rutz"
+    },
+    "image": {}
+  },
+  {
+    "id": "nobelhart-schmutzig",
+    "title": "Nobelhart & Schmutzig",
+    "theme": "Restaurants",
+    "lat": 52.5019,
+    "lng": 13.3872,
+    "info": {
+      "en": "https://guide.michelin.com/en/berlin-region/berlin/restaurant/nobelhart-schmutzig"
+    },
+    "image": {}
+  },
+  {
+    "id": "cookies-cream",
+    "title": "Cookies Cream",
+    "theme": "Restaurants",
+    "lat": 52.5157,
+    "lng": 13.3895,
+    "info": {
+      "en": "https://guide.michelin.com/en/berlin-region/berlin/restaurant/cookies-cream"
+    },
+    "image": {}
+  },
+  {
+    "id": "facil",
+    "title": "FACIL",
+    "theme": "Restaurants",
+    "lat": 52.507,
+    "lng": 13.3648,
+    "info": {
+      "en": "https://guide.michelin.com/en/berlin-region/berlin/restaurant/facil"
+    },
+    "image": {}
+  },
+  {
+    "id": "horvath",
+    "title": "Horváth",
+    "theme": "Restaurants",
+    "lat": 52.498,
+    "lng": 13.4216,
+    "info": {
+      "en": "https://guide.michelin.com/en/berlin-region/berlin/restaurant/horvath"
+    },
+    "image": {}
+  },
+  {
+    "id": "coda",
+    "title": "CODA Dessert Dining",
+    "theme": "Restaurants",
+    "lat": 52.4996,
+    "lng": 13.4421,
+    "info": {
+      "en": "https://guide.michelin.com/en/berlin-region/berlin/restaurant/coda-dessert-dining"
+    },
+    "image": {}
+  },
+  {
+    "id": "mustafas-gemuse-kebap",
+    "title": "Mustafa's Gemüse Kebap",
+    "theme": "Restaurants",
+    "lat": 52.4993,
+    "lng": 13.4037,
+    "info": {
+      "nl": "https://nl.wikipedia.org/wiki/Mustafa%27s_Gem%C3%BCse_Kebab",
+      "en": "https://en.wikipedia.org/wiki/Mustafa%27s_Gem%C3%BCse_Kebab"
+    },
+    "image": {}
+  },
+  {
+    "id": "curry36",
+    "title": "Curry 36",
+    "theme": "Restaurants",
+    "lat": 52.499,
+    "lng": 13.4032,
+    "info": {
+      "en": "https://en.wikipedia.org/wiki/Curry_36"
+    },
+    "image": {}
+  },
+  {
+    "id": "burgermeister",
+    "title": "Burgermeister",
+    "theme": "Restaurants",
+    "lat": 52.4996,
+    "lng": 13.4413,
+    "info": {
+      "en": "https://en.wikipedia.org/wiki/Burgermeister"
+    },
+    "image": {}
+  }
+]

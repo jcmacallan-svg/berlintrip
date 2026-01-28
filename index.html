@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Berlijn POI Planner</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <h1>Berlijn POI Planner</h1>
+      <div class="row">
+        <select id="themeSelect" class="select"></select>
+        <input id="searchBox" type="search" placeholder="Zoek POI (titel)..." />
+      </div>
+
+      <h2>Route (jouw selectie)</h2>
+      <small>
+        Voeg POI’s toe aan de route. De kaart toont een route-lijn binnen Berlijn (OSRM).
+        Je kunt de volgorde aanpassen.
+      </small>
+      <div class="poi-actions" style="margin-top:10px;">
+        <button id="routeFromFavoritesBtn" title="Vul route met favorieten (in huidige filter)">Route = Favorieten</button>
+        <button id="clearRouteBtn">Route wissen</button>
+      </div>
+      <ol id="routeList"></ol>
+      <div id="routeSummary"><small>Geen route (minimaal 2 stops).</small></div>
+
+      <h2>Details</h2>
+      <div id="details"><small>Klik een POI in de lijst of op een marker.</small></div>
+
+      <h2>POI’s</h2>
+      <div id="poiList"></div>
+
+      <hr style="border:0;border-top:1px solid var(--border); margin: 14px 0;" />
+      <small>
+        Data: <code>pois.json</code>. Favorieten en route worden lokaal opgeslagen (localStorage).<br/>
+        Tip: pas coördinaten/links aan naar jouw smaak.
+      </small>
+    </aside>
+
+    <main>
+      <div id="map"></div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
