@@ -3,9 +3,8 @@
   --panel: #111318;
   --text: #e8e8ea;
   --muted: #a8a8b3;
-  --border: rgba(255,255,255,0.10);
+  --border: rgba(255,255,255,0.08);
   --accent: #6ee7ff;
-  --sidebarW: 440px;
 }
 
 * { box-sizing: border-box; }
@@ -21,13 +20,9 @@ html, body {
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-h1 { font-size: 18px; margin: 0 0 10px; }
-h2 { font-size: 14px; margin: 14px 0 8px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
-small { color: var(--muted); }
-
 #app {
   display: grid;
-  grid-template-columns: var(--sidebarW) 8px 1fr;
+  grid-template-columns: 420px 1fr;
   height: 100vh;
 }
 
@@ -38,68 +33,76 @@ small { color: var(--muted); }
   overflow: auto;
 }
 
-#splitter {
-  cursor: col-resize;
-  background: rgba(255,255,255,0.06);
+#map {
+  height: 100vh;
+  width: 100%;
 }
-#splitter:hover { background: rgba(255,255,255,0.10); }
 
-#map { height: 100vh; width: 100%; }
+h1 { font-size: 18px; margin: 0 0 10px; }
+h2 { font-size: 14px; margin: 14px 0 8px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+small { color: var(--muted); }
 
 .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-
-/* Higher contrast form controls */
-select, input, button { font: inherit; }
-
 .select, input[type="search"] {
   width: 100%;
-  background: rgba(255,255,255,0.10);
-  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
   color: var(--text);
   padding: 10px 10px;
-  border-radius: 12px;
+  border-radius: 10px;
   outline: none;
 }
-.select option { background: #111318; color: var(--text); }
-
 button {
-  background: rgba(255,255,255,0.10);
-  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid var(--border);
   color: var(--text);
-  padding: 9px 11px;
-  border-radius: 12px;
+  padding: 8px 10px;
+  border-radius: 10px;
   cursor: pointer;
 }
-button:hover { background: rgba(255,255,255,0.14); }
+button:hover { background: rgba(255,255,255,0.12); }
 
 .poi {
   display: grid;
-  grid-template-columns: 86px 1fr;
-  gap: 12px;
-  padding: 12px;
+  grid-template-columns: 70px 1fr;
+  gap: 10px;
+  padding: 10px;
   border: 1px solid var(--border);
-  border-radius: 16px;
-  margin-bottom: 12px;
+  border-radius: 14px;
+  margin-bottom: 10px;
 }
 
 .thumb {
-  width: 86px;
-  height: 64px;
-  border-radius: 12px;
+  width: 70px;
+  height: 54px;
+  border-radius: 10px;
   object-fit: cover;
   border: 1px solid var(--border);
-  background: rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.04);
 }
 
-.poi-title { font-weight: 750; font-size: 14.5px; line-height: 1.2; }
+.poi-title {
+  font-weight: 650;
+  font-size: 13.5px;
+  line-height: 1.2;
+}
 
-.poi-meta { font-size: 12.5px; color: var(--muted); margin-top: 3px; }
+.poi-meta {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
 
-.poi-actions { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.poi-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
 
 .badge {
-  font-size: 11.5px;
-  padding: 2px 9px;
+  font-size: 11px;
+  padding: 2px 8px;
   border-radius: 999px;
   border: 1px solid var(--border);
   color: var(--muted);
@@ -107,9 +110,9 @@ button:hover { background: rgba(255,255,255,0.14); }
 
 #details {
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: 14px;
   padding: 12px;
-  background: rgba(255,255,255,0.04);
+  background: rgba(255,255,255,0.03);
 }
 
 #details img {
@@ -118,28 +121,17 @@ button:hover { background: rgba(255,255,255,0.14); }
   border: 1px solid var(--border);
 }
 
-#routeList li { margin: 6px 0; }
-
-/* Mobile friendly layout: stack sidebar + map */
-@media (max-width: 820px) {
-  #app {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-  }
-  #sidebar {
-    height: 52vh;
-    border-right: 0;
-    border-bottom: 1px solid var(--border);
-  }
-  #splitter { display: none; }
-  #map { height: 48vh; }
-}
-
-@media (max-width: 520px) {
-  #sidebar { height: 58vh; }
-  #map { height: 42vh; }
+#routeList li {
+  margin: 6px 0;
 }
 
 .leaflet-container { background: #0b0c10; }
 
-input[type="checkbox"]{ width:16px; height:16px; accent-color: var(--accent); }
+/* Map hidden mode (start in list mode) */
+#mapWrap.is-hidden { display: none; }
+
+/* When map is hidden: one column layout */
+#app.map-hidden {
+  grid-template-columns: 1fr;
+}
+#app.map-hidden #splitter { display: none; }
