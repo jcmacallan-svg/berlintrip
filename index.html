@@ -18,15 +18,37 @@
         <input id="searchBox" type="search" placeholder="Zoek POI (titel)..." />
       </div>
 
+      <div style="margin-top:10px;">
+        <small>Sidebar breedte</small>
+        <input id="sidebarSlider" type="range" min="320" max="720" value="440" style="width:100%;" />
+      </div>
+
+
       <h2>Route (jouw selectie)</h2>
       <small>
-        Voeg POI’s toe aan de route. De kaart toont een route-lijn binnen Berlijn (OSRM).
+        Voeg POI’s toe aan de route. De kaart toont een route-lijn binnen Berlijn. Reistijd wordt weergegeven als wandel-schatting op basis van 4,5 km/u.
         Je kunt de volgorde aanpassen.
       </small>
       <div class="poi-actions" style="margin-top:10px;">
         <button id="routeFromFavoritesBtn" title="Vul route met favorieten (in huidige filter)">Route = Favorieten</button>
         <button id="clearRouteBtn">Route wissen</button>
       </div>
+
+      <div style="margin-top:10px;">
+        <small>OpenRouteService (walking) API key (optioneel)</small>
+        <input id="orsKeyInput" type="password" class="select" placeholder="Plak je ORS API key hier (wordt lokaal opgeslagen)" />
+        <div class="poi-actions" style="margin-top:8px;">
+          <button id="optimizeRouteBtn" title="Zet route in logische volgorde vanaf hotel">Optimaliseer volgorde</button>
+          <label style="display:flex;gap:8px;align-items:center; font-size:12.5px; color: var(--muted);">
+            <input id="startAtHotelChk" type="checkbox" checked />
+            Start bij hotel
+          </label>
+        </div>
+        <small style="display:block; margin-top:6px;">
+          Zonder key valt de app terug op OSRM (kan driving-georiënteerd zijn). Met ORS gebruikt de app <code>foot-walking</code>.
+        </small>
+      </div>
+
       <ol id="routeList"></ol>
       <div id="routeSummary"><small>Geen route (minimaal 2 stops).</small></div>
 
@@ -42,6 +64,8 @@
         Tip: pas coördinaten/links aan naar jouw smaak.
       </small>
     </aside>
+
+    <div id=\"splitter\" title=\"Sleep om sidebar breedte aan te passen\"></div>
 
     <main>
       <div id="map"></div>

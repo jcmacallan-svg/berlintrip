@@ -50,3 +50,19 @@ Velden per POI:
 ## Disclaimer
 Coördinaten en sommige links zijn een **starter set** (handig als basis). Controleer/verbeter ze gerust op basis van jouw bronnen
 (Wikipedia, berlin.de, officiële sites).
+
+
+## Import scripts (Wikipedia/Wikidata)
+
+Zie `scripts/README.md`.
+
+    
+## OpenRouteService (walking)
+Plak een ORS API key in de app (wordt lokaal opgeslagen). Dan gebruikt de app `foot-walking` via het ORS Directions endpoint (GeoJSON). 
+Zonder key valt de app terug op OSRM (kan driving-georiënteerd zijn).
+
+## Optimale volgorde
+`Optimaliseer volgorde` gebruikt een simpele nearest-neighbor heuristiek (snel & offline) en kan starten vanaf het hotel.
+
+## Hotel marker
+De kaart markeert **Leonardo Hotel Berlin Mitte** als rode marker (startpunt voor routes). Adres: Bertolt-Brecht-Platz 4, 10117 Berlin. 
