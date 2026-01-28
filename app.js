@@ -40,6 +40,39 @@ function commonsFilePage(file) {
   return `https://commons.wikimedia.org/wiki/File:${safe}`;
 }
 
+
+async function loadScriptOnce(src) {
+  if (document.querySelector(`script[data-src="${src}"]`)) return;
+  await new Promise((resolve, reject) => {
+    const s = document.createElement("script");
+    s.src = src;
+    s.async = true;
+    s.dataset.src = src;
+    s.onload = resolve;
+    s.onerror = () => reject(new Error("Failed to load " + src));
+    document.head.appendChild(s);
+  });
+}
+
+function loadCssOnce(href) {
+  if (document.querySelector(`link[data-href="${href}"]`)) return;
+  const l = document.createElement("link");
+  l.rel = "stylesheet";
+  l.href = href;
+  l.dataset.href = href;
+  document.head.appendChild(l);
+}
+
+async function loadMapLibs() {
+  // Load CSS first
+  loadCssOnce("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
+  loadCssOnce("https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css");
+
+  // Load JS
+  await loadScriptOnce("https://unpkg.com/leaflet@1.9.4/dist/leaflet.js");
+  await loadScriptOnce("https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js");
+}
+
 let allPois = [];
 let filteredPois = [];
 let favorites = loadSet(FAVORITES_KEY);
@@ -61,12 +94,13 @@ const btnRouteFromFav = document.getElementById("routeFromFavoritesBtn");
 const toggleMapBtn = document.getElementById("toggleMapBtn");
 
 
-function showMap() {
+async function showMap() {
   if (elApp) elApp.classList.remove("map-hidden");
   if (elMapWrap) elMapWrap.classList.remove("is-hidden");
   if (toggleMapBtn) toggleMapBtn.textContent = "Verberg kaart";
 
   if (!mapInitialized) {
+    await loadMapLibs();
     initMap();
     mapInitialized = true;
     // Markers depend on current filter
@@ -390,7 +424,10 @@ function showDetails(id, panTo=false) {
   });
   document.getElementById("detailsAddRouteBtn").addEventListener("click", () => addToRoute(p.id));
   document.getElementById("detailsZoomBtn").addEventListener("click", () => {
-    if (!mapInitialized) showMap();
+    if (!mapInitialized) {
+      showMap().then(() => { if (map) map.setView([p.lat, p.lng], 15); });
+      return;
+    }
     if (map) map.setView([p.lat, p.lng], 15);
   });
 
